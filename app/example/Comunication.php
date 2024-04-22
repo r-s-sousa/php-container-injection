@@ -1,8 +1,8 @@
 <?php
 
-namespace app\container;
+namespace app\example;
 
-class CustomerComunication
+class Comunication
 {
     public function __construct(private MailerInterface $mailer)
     {
@@ -10,6 +10,6 @@ class CustomerComunication
 
     public function SendDefaultMessage(): void
     {
-        $this->mailer->send('Default message to customer');
+        $this->mailer->send('Default message to Comunication<br>');
     }
 }
